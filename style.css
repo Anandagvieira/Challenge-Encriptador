@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #F3F5FC;
+}
+
+main {
+    width: 100%;
+}
+
+::-webkit-input-placeholder  { 
+    color: #0A3871; 
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+}
+
+input:-moz-placeholder { 
+    color: #0A3871; 
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+ }
+
+textarea:-moz-placeholder {     
+    color: #0A3871; 
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+ }
+
+.logo {
+    margin-left: 2em;
+    margin-top: 1em;
+
+}
+
+.container {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+            
+}
+
+.alerta {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 1em;
+}
+
+.area-input {
+    margin-top: 11em;
+    margin-left: 4em;
+    margin-right: 2.5em;
+    width: 600px;
+    height: 400px;
+
+}
+
+#mensagem, #output {
+    font-family: "Inter", sans-serif;
+    line-height: 1.5em;
+
+}
+
+#mensagem {
+    color: #0A3871;
+    background: #F3F5FC;
+    outline: none;
+    border: none;
+    resize: none;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 1.5em;
+    font-size: 18px;
+}
+
+#area-output {
+    background: white;
+    width: 20%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+    margin-right: 2em;
+  
+}
+
+#output {
+    font-size: 14px;
+    resize: none;
+    border: none;
+    outline: none;
+    width: 90%;
+    margin-top: 1.5em;
+    margin-bottom: 20%;
+    height: 500px;
+    color: #495057;
+}
+
+.personagem {
+    width: 80%;
+    margin-top: 10em;
+}
+
+.nenhuma-mensagem {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    /* or 29px */
+    text-align: center;
+    
+    /* Gray/gray-500 */
+    color: #343A40;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.digite {
+    
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+padding-left: 1em;
+padding-right: 1em;
+
+/* or 24px */
+text-align: center;
+
+/* Gray/gray-400 */
+color: #495057;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin-top: 1em;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 15px 100px;
+    border-radius: 20px;
+    border: 1px solid #0A3871;
+    margin-bottom: 1em;
+    text-align: center;
+          
+}
+
+#criptBtn {
+    background-color: #0A3871;
+    color: white;
+}
+
+#criptBtn:hover {
+    background-color: white;
+    color:#0A3871;
+}
+
+#decripBtn {
+    margin-left: 1em;
+    color: #0A3871;
+}
+
+#decripBtn:hover {
+    background-color: #0A3871;
+    color: white;
+}
+
+
+#copyBtn {
+    color:#0A3871;
+    text-align: center;
+    width: 80%;
+    max-width: 80%;
+    
+}
+
+#copyBtn:hover {
+    background: #0A3871;
+    color: white;
+}
+
+/* Responsividade para tablets */
+@media screen and (max-width: 1025px) {
+    .container {
+        width: 100%;
+        display: inline;
+            
+    }
+
+    .area-input {
+        width: 90%;
+        margin-top: 4.5em;
+    }
+
+    button {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+    
+    }
+
+    .btns {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .personagem {
+        display: none;
+    }
+
+    .nenhuma-mensagem {
+        padding-top: 0.5em;
+        margin-top: 6em;
+        margin-bottom: 0.1em;
+        width: 100%;
+       
+    }
+
+    .digite {
+        margin-top: 0.5em;
+        padding-bottom: 1em;
+    }
+
+    #area-output {
+        width: 90%;
+        margin-top: 8em;
+        margin-left: 4em;
+        margin-right: 2em;
+        text-align: center;
+                    
+    }
+
+    #output {
+        width: 90%;
+        height: 10em;
+        margin: 1em 3em;
+        font-size: 18px;
+               
+    }
+    
+    #copyBtn {
+        width: 100%;
+    }
+
+}
+
+
+
+/* Responsividade para celulares */
+@media screen and (max-width: 768px) {
+    
+    .logo {
+        margin-left: 0.5em;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+    #mensagem {
+        height: 250px;
+        margin-bottom: 1em;
+        font-size: 16px;
+        
+    }
+
+    .nenhuma-mensagem {
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    #output {
+        margin: 1em auto;
+        font-size: 14px;
+    }
+    
+    
+    .btns {
+        display: inline;
+        width: 90%;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+                
+    }
+
+    #criptBtn {
+        margin-bottom: 0.5em;
+    }
+
+    #decripBtn {
+        margin-left: 0;
+    }
+
+    .area-input {
+        margin-left: 1em;
+    }
+
+    #area-output {
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+
+    footer {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (min-width: 340px) {
+
+    .btns {
+        
+    }
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 4.5em;
+    margin-bottom: 0.5em;
+    color: grey;
+    font-size: 12px;
+}
+
+footer p::before {
+    content:"[ ";
+}
+
+footer p::after {
+    content:" ]";
+}
+
+footer p a {
+    text-decoration: none;
+    color: #0A3871;
+}
+
+footer p a:hover {
+    color: lightcoral;
+}
+
+.banner video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+}
